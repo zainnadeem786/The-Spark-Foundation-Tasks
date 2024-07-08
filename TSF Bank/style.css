@@ -1,0 +1,126 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.menu-bar
+{
+background: #00FFFF;
+background-size: 50px;
+text-align: center;
+height: 90px;
+}
+.menu-bar ul
+{
+	float: right;
+	display: inline-flex;
+	list-style-type: none;
+	color: #fff;
+}
+.menu-bar ul li
+{
+	width: 110px;
+	margin: 5px;
+	padding: 5px;
+}
+.menu-bar ul li a 
+{
+	text-decoration: none;
+	color: #000000;
+}
+.logo img{
+	background: #00FFFF;
+	float: left;
+	width: 80px;
+	height: auto;
+}
+.title{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.title h1{
+	float: left;
+	
+}
+.title h3{
+	
+	float: left;
+
+}
+.active, .menu-bar ul li:hover
+{
+	background:linear-gradient(#8fff76, #fff);
+	transition: .4s;
+	border-radius: 3px;
+
+}
+.Customers-List
+{
+	display: none;
+	margin: 10px;
+}
+.menu-bar ul li:hover .Customers-List
+{
+	display: block;
+    position: absolute;
+    background: #ffffff;
+    margin-top: 5px;
+    margin-left: -15px;
+    border: 2px solid sandybrown;
+    border-radius: 80px;
+} 
+.menu-bar ul li:hover .Customers-List ul
+{
+	display: block;
+	margin: 10px;
+}
+.menu-bar ul li:hover .Customers-List ul li
+{
+	width: 	150px;
+	padding: 10px;
+	border-bottom: 1px;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menu-bar ul li:hover .Customers-List ul li:last-child
+{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .Customers-List ul li a:hover
+{
+	color: rgb(255, 0, 0);
+}
+
+.main{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+    font-size: 99px;
+    color: black;
+	text-shadow: 3px 3px 0 white;
+}
+footer{
+	height: 150px;
+	color: black;
+	background-color: #00FFFF;
+	text-align: center;
+}
+
